@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at top,#dbeafe,#eff6ff);font-family:"Source Sans Pro",sans-serif;color:#1e293b}
+.card{width:100%;max-width:500px;padding:24px 20px 16px;background:rgba(255,255,255,.9);border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.12);position:relative}
+header h1{margin:10px auto 1.5em;font-size:2rem;text-align:center;color:#212730}
+header h1 span{color:#3b82f6}
+header p{margin:4px 0 3em;text-align:center;color:#212730;font-size:1rem;font-weight:700}
+form{display:flex;flex-direction:column;gap:15px;margin-bottom:12px}
+label{font-size:14px;color:#212730}
+input[type="url"]{padding:16px 16px;border-radius:12px;border:1px solid #94a3b8;background:#f8fafc;color:#1e293b;outline:none;transition:border-color .2s,background .2s;font-size:16px;min-height:56px}
+input[type="url"]:focus{border-color:#3b82f6;background:#fff}
+input[type="url"]:hover{border-color:#60a5fa}
+.paste-wrapper{position:relative;width:100%}
+.paste-wrapper input{width:100%;padding-right:62px}
+.paste-btn-in{position:absolute;inset:0 auto 0 auto;right:10px;margin:auto 0;width:44px;height:44px;background:#e5e7eb;border:none;border-radius:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.paste-btn-in:hover{background:#f3f4f6}
+.paste-btn-in:active{background:#d1d5db}
+.paste-btn-in i{font-size:18px;color:#111827}
+button{margin-top:4px;padding:12px 14px;border-radius:999px;border:none;cursor:pointer;font-size:1rem;font-weight:600;background:linear-gradient(to right,#3b82f6,#60a5fa);color:#fff;transition:opacity .2s ease,transform .12s ease,box-shadow .12s ease}
+button:disabled{opacity:.6;cursor:default}
+button:not(.paste-btn-in):hover:not(:disabled){opacity:.9;transform:translateY(-1px);box-shadow:0 4px 12px rgba(59,130,246,.3)}
+.status{min-height:20px;font-size:.9rem;color:#dc2626;margin-bottom:8px}
+.result.hidden{display:none}
+.result{display:flex;flex-direction:column;margin-top:5px;padding-top:8px;border-top:1px solid #cbd5e1}
+.result h2{font-size:1rem;text-align:center;margin-bottom:10px;color:#1e293b}
+video{width:100%;border-radius:12px;margin:10px 0;background:#e2e8f0}
+.download-wrapper{display:flex;flex-direction:column;margin-top:8px;text-align:center}
+.btn-download{display:none;padding:12px 18px;border-radius:999px;border:none;cursor:pointer;background:#22c55e;font-size:1rem;font-weight:600;color:#fff;box-shadow:0 6px 18px rgba(34,197,94,.18);transition:.2s ease}
+.btn-download:hover{transform:translateY(-1px)}
+.btn-download:active{transform:translateY(0)}
+.btn-download:disabled{opacity:.6;cursor:default;transform:none;box-shadow:none}
+#download-link:hover{background:#16a34a;color:#fff;transform:translateY(-1px);box-shadow:0 4px 10px rgba(34,197,94,.3)}
+footer{margin-top:2.5em;font-size:14px;color:#212730;text-align:center}
+footer .credit{font-weight:600;margin-top:3em}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}

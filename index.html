@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Toktokdownloader - TikTok Downloader</title>
+  <link href="/favicon/icon32.png" rel="icon" sizes="32x32"/>
+  <link href="/favicon/icon192.png" rel="icon" sizes="192x192"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&amp;display=swap">
+  <meta name="description" content="Download video TikTok tanpa watermark, cepat dan gratis.">
+  <meta name="robots" content="nofollow, noindex, noimageindex, noarchive, nosnippet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="card">
+    <header>
+      <h1><span>Toktok</span>downloader</h1>
+      <p>Download video TikTok<br/>
+      TANPA WATERMARK, CEPAT, dan GRATIS!!!</p>
+    </header>
+
+    <main>
+      <form id="download-form">
+        <label for="tiktok-url">Paste link TikTok pada kolom di bawah ini, lalu klik tombol  <b>Download</b>. Kemudian klik lagi tombol <b>Download Video</b> untuk menyimpan video.</label>
+
+        <div class="paste-wrapper">
+          <input
+            id="tiktok-url"
+            type="url"
+            placeholder="https://vt.tiktok.com/ZSfPc62yc/"
+            required
+          />
+          <button type="button" id="paste-btn" class="paste-btn-in" aria-label="paste link">
+            <i class="fa-solid fa-paste"></i>
+          </button>
+        </div>
+
+        <button type="submit" id="download-btn">Download</button>
+      </form>
+
+      <div id="status" class="status"></div>
+
+      <div id="result" class="result hidden">
+        <h2>Video siap di Download <span style="color: #23d000;">✔</span></h2>
+        <video id="preview" controls></video>
+        <div class="download-wrapper">
+          <button id="download-now" class="btn-download" type="button">
+            Download Video
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Gunakan dengan bijak dan tetap patuhi aturan<br/>
+        <a href="https://www.tiktok.com/legal/page/row/terms-of-service/id" target="_blank" rel="nofollow noopener">Terms of Service TikTok</a>.
+      </p>
+
+      <div class="credit">
+        <p>
+          Create by. <a href="https://indradp.web.id/" target="_blank" rel="nofollow noopener">Indra DP</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
